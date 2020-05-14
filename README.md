@@ -1,2 +1,19 @@
 # codeforces
 Codeforces Solutions
+
+
+## In Progress
+- 996A: Hit the Lottery
+
+
+## On Hold
+
+
+## Complete
+- 1A: Theatre Square
+- 4A: Watermelon
+- 71A: Way Too Long Words
+- 158A: Next Round
+- 189A: Cut Ribbon
+- 337A: Puzzles 
+- 580A: Kefa and First Steps
