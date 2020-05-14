@@ -3,8 +3,7 @@ Codeforces Solutions
 
 
 ## In Progress
-- 996A: Hit the Lottery
-
+- 118A: String Task
 
 ## On Hold
 
@@ -16,4 +15,5 @@ Codeforces Solutions
 - 158A: Next Round
 - 189A: Cut Ribbon
 - 337A: Puzzles 
+- 996A: Hit the Lottery
 - 580A: Kefa and First Steps
