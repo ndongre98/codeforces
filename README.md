@@ -8,7 +8,7 @@ Codeforces Solutions
 ## On Hold
 
 
-## Complete
+## Completed
 - 1A: Theatre Square
 - 4A: Watermelon
 - 71A: Way Too Long Words
@@ -17,3 +17,5 @@ Codeforces Solutions
 - 337A: Puzzles 
 - 996A: Hit the Lottery
 - 580A: Kefa and First Steps
+- 996A: Hit the Lottery
+
