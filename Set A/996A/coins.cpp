@@ -19,7 +19,6 @@ int dp() {
       int resC = ((i - 10) < 0) ? -1 : DP[i-10];
       int resD = ((i - 20) < 0) ? -1 : DP[i-20];
       int resE = ((i - 100) < 0) ? -1 : DP[i-100];
-
       
       int res = min(resE, min(resD, min(resA, min(resB, resC))));
       DP[i] = (res == -1) ? -1 : res + 1;
@@ -32,25 +31,29 @@ int faster() {
    int val = N;
    int rem = 0;
    int sum = 0;
-   if (N >= 100) {
-      val = N/100;
-      rem = N%100;
-      sum += val;
+
+   if (val >= 100) {
+      rem = val%100;
+      sum += val/100;
+      val = rem;
    }
    if (val >= 20) {
-      val = rem/20;
       rem = val%20;
-      sum += val;
+      sum += val/20;
+      val = rem;
    } 
    if (val >= 10) {
-      val = rem/10;
       rem = val%10;
-      sum += val;
+      sum += val/10;
+      val = rem;
    }
    if (val >= 5) {
-      val = rem/5;
       rem = val%5;
-      sum += val;
+      sum += val/5;
+      val = rem;
+   }
+   if (val >= 1) {
+      rem = val;
    } 
    return sum + rem;
 }
