@@ -5,7 +5,6 @@
 
 ## On Hold
 
-
 ## Completed
 - 1A: Theatre Square
 - 4A: Watermelon
