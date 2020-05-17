@@ -1,5 +1,4 @@
-# codeforces
-Codeforces Solutions
+# Codeforces Solutions
 
 
 ## In Progress
