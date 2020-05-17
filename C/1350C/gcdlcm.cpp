@@ -1,44 +1,34 @@
 #include <iostream>
-#include <set> 
-#include <vector> 
-#include <iterator> 
+#include <numeric>
+
 #define ll long long
 using namespace std;
 
-// SLOW AF
+ll max(ll m, ll n) { return (m > n) ? m : n; }
+ll derp(ll m, ll n) { return (m == 0 || n == 0) ? max(m, n) : gcd(m, n); }
 
-ll gcd(ll a, ll b) {
-    int c;      
-    while (b) { c = a; a = b; b = c % b; }
-    return a;
-}
-
-ll lcm(ll a, ll b) { return (a*b)/gcd(a, b); }
-
-int main ()
-{
-  int i, j, N;
-  cin >> N;
-  
-  ll A[200001];
-  set <ll, greater <ll> > lcms;         
-
-  for (i = 0; i < N; i++) cin >> A[i];
-  
-  for (i = 0; i < N; i++) {
-   for (j = i+1; j < N; j++) {
-      lcms.insert(lcm(A[i], A[j]));
-   }  
-  }
-  
-  int res;
-  set <ll, greater <ll> > :: iterator itr; 
-  for (itr = lcms.begin(); itr != lcms.end(); ++itr) {
-   cout << *itr << endl;
-   if (itr == lcms.begin()) res = *itr;
-   else res = gcd(res, *itr);
-  }
-
-  cout << res << endl;
-  return 0;
+int main() {
+   int n, i;
+   cin >> n;
+   
+   ll A[100001];
+   ll G[100001];
+    
+   for (i = 0; i < n; i++) {
+     cin >> A[i];  
+   }
+   
+   G[n-1] = A[n-1];
+   for (i = n-2; i >= 0; i--) {
+      G[i] = derp(A[i], G[i+1]);
+   }
+   
+   ll res = (A[0] * G[1])/G[0];
+   
+   for (i = 1; i < n-1; i++) {
+      res = derp(res, (A[i] * G[i+1])/G[i]);
+   }
+ 
+   cout << res << endl;
+   return 0;
 }

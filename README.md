@@ -3,7 +3,6 @@ Codeforces Solutions
 
 
 ## In Progress
-- 1350C: Orac and LCM
 
 ## On Hold
 
@@ -26,3 +25,4 @@ Codeforces Solutions
 - 158B: Taxi
 - 1350A: Orac and Factors
 - 1350B: Orac and Models
+- 1350C: Orac and LCM
