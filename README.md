@@ -1,11 +1,16 @@
-# Codeforces Solutions
+# Competitive Programming Solutions
+---
+This repo contains solutions to problems on CF and HackerRank.
 
 
-## In Progress
+##Codeforces
 
-## On Hold
+### In Progress
+- 1350D: Orac and Medians
 
-## Completed
+### On Hold
+
+### Completed
 - 1A: Theatre Square
 - 4A: Watermelon
 - 25A: IQ Test
@@ -24,3 +29,13 @@
 - 1350A: Orac and Factors
 - 1350B: Orac and Models
 - 1350C: Orac and LCM
+
+
+## HackerRank
+
+### In Progress
+
+### On Hold
+
+### Completed
+- Coin Change Problem
