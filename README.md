@@ -3,7 +3,7 @@
 This repo contains solutions to problems on CF and HackerRank.
 
 
-##Codeforces
+## Codeforces
 
 ### In Progress
 - 1350D: Orac and Medians
