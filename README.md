@@ -1,5 +1,5 @@
 # Competitive Programming Solutions
----
+
 This repo contains solutions to problems on CF and HackerRank.
 
 
