@@ -39,3 +39,4 @@ This repo contains solutions to problems on CF and HackerRank.
 
 ### Completed
 - Coin Change Problem
+- Unbounded Knapsack
