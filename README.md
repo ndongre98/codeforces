@@ -1,9 +1,12 @@
 # Competitive Programming Solutions
----
+
 This repo contains solutions to problems on CF and HackerRank.
 
 
-##Codeforces
+## Codeforces
+
+ID: dullahance
+don't judge me :<
 
 ### In Progress
 - 1350D: Orac and Medians
