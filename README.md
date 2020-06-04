@@ -9,7 +9,6 @@ ID: dullahance
 don't judge me :<
 
 ### In Progress
-- 1350D: Orac and Medians
 
 ### On Hold
 
@@ -32,7 +31,7 @@ don't judge me :<
 - 1350A: Orac and Factors
 - 1350B: Orac and Models
 - 1350C: Orac and LCM
-
+- 1350D: Orac and Medians
 
 ## HackerRank
 

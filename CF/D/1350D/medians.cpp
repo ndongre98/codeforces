@@ -10,47 +10,41 @@ ll A[100002];
 
 int min(int i, int j) { return (i < j) ? i : j; }
 int size(int i) { return (i*2 - 1); }
-int update(int i, int j, int k) {
-   int x;
-   for (x = i; x <= j; x++) A[x] = k;
-   return 0;
+
+int solve(int n, ll k){
+   if (n == 1) return (A[0] == k);
+   if (n == 2) return ((A[0] == k || A[1] == k) && (k <= A[0] && k <= A[1]));
+
+   bool k_exists = (A[n-2] == k || A[n-1] == k);
+   bool pair_exists = false;
+   int pair_cnt = 0;
+   for(int i = 0; i < n - 2; i++){
+      if(A[i] == k) 
+         k_exists = true;
+      if (k <= A[i]) pair_cnt ++;
+      if (k <= A[i+1]) pair_cnt ++;
+      if (k <= A[i+2]) pair_cnt ++;
+      if (pair_cnt >= 2) pair_exists = true;
+      pair_cnt = 0;
+   }
+
+   return k_exists && (n == 1 || pair_exists) ? 1 : 0;
 }
 
 
 int main() {
    fio
-   int t, n, i, j;
+   int epochs, n, i, j;
    ll k;
    
-   cin >> t;
-   
-   for (j = 0; j < t; j++) {
-      string res = "no";
-      int first = 1;
+   cin >> epochs;
+   for (i = 0; i < epochs; i++) {
       cin >> n >> k;
-       
-      for (i = 1; i <= n; i++) {
-        cin >> A[i];  
+      for (j = 0; j < n; j++) {
+         cin >> A[j];
       }
-            
-      i = 1;
-      while (i <= n) {
-         int dist = min(i-1, n - i);
-         if (A[i] == k && first) {
-            first = 0;
-            update(i - dist, i + dist, k);
-            i += dist;
-            if (i >= n && (n == 1 || A[i - dist - 1] == k)) { res = "yes"; break; }
-            if (!dist) { i++; }
-         } else if (A[i] == k && A[i - dist] == k) {
-            update(i+1, i + dist, k);
-            i += dist;
-            if (i >= n && (n == 1 || A[i - dist - 1] == k)) { res = "yes"; break; }
-            if (!dist) { i++; }
-         } else { i++; }
-      }
-      
-      cout << res << endl; 
+      string res = (solve(n,k)) ? "yes" : "no";
+      cout << res << endl;
    }
    return 0;
 }
