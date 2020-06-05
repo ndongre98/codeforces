@@ -28,6 +28,9 @@ don't judge me :<
 - 580A: Kefa and First Steps
 - 996A: Hit the Lottery
 - 158B: Taxi
+- 1325A: EhAb AnD gCd
+- 1325B: CopyCopyCopyCopyCopy 
+- 1325C: Ehab and Path-ethic MEXs
 - 1350A: Orac and Factors
 - 1350B: Orac and Models
 - 1350C: Orac and LCM
