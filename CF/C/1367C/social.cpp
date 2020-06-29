@@ -25,20 +25,16 @@ int main() {
       for(int i = n-2; i >= 0; i--) {
          int toAdd = (s[i+1] == '1' ? 1 : 0);
          sum += toAdd;   
-         if (i < n - 1 - k) { 
-            sum -= (s[i+k+1] == '1' ? 1 : 0);
-         }
+         if (i < n - 1 - k) sum -= (s[i+k+1] == '1' ? 1 : 0);
          a[i] = sum;
       }          
         
       int total = 0;
       int j = 0;
       while (j < n) { 
-         if (s[j] == '0' && a[j]) {
-            j += 1;
-         }  
+         if (s[j] == '0' && a[j]) j += 1;
          else {
-            if (s[j] == '0' && a[j] == 0) { total += 1; }
+            if (s[j] == '0' && a[j] == 0) total += 1;
             j += (k+1);
          }
       }
