@@ -1,6 +1,10 @@
 #include <iostream>
-#include <algorithm>    // std::reverse
-#include <vector>       // std::vector
+
+/*
+  Algorithm: A table can be placed at index i if all the tables between i+k and i-k are empty (1s). 
+  The "i-k" condition is checked by traversing forward through all the tables. We can use a 
+  rolling sum to determine if the tables from (i+1) to (i+k) are empty. 
+*/
 
 using namespace std;
 #define fio ios_base::sync_with_stdio(true); cin.tie(NULL); cout.tie(NULL);
