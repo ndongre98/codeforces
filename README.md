@@ -9,8 +9,10 @@ ID: dullahance
 don't judge me :<
 
 ### In Progress
+- 1343A: Candies
 
 ### On Hold
+- 1344C: Quantifier Question
 
 ### Completed
 - 1A: Theatre Square
@@ -31,10 +33,14 @@ don't judge me :<
 - 1325A: EhAb AnD gCd
 - 1325B: CopyCopyCopyCopyCopy 
 - 1325C: Ehab and Path-ethic MEXs
+- 1344A: Hilbert's Hotel
 - 1350A: Orac and Factors
 - 1350B: Orac and Models
 - 1350C: Orac and LCM
 - 1350D: Orac and Medians
+- 1367A: Short Substrings
+- 1367B: Even Array
+- 1367C: Social Distance
 
 ## HackerRank
 
